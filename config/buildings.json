@@ -1,0 +1,36 @@
+{
+    "buildings": [
+        "kenny": {
+            "ion_url": "",
+            "scraper": "",
+            "tips": [
+            ],
+            "neighbours": [
+            ]
+        },
+        "life": {
+            "ion_url": ""
+        },
+        "totem": {
+            "ion_url": ""
+        },
+        "haida": {
+            "ion_url": ""
+        },
+        "salish": {
+            "ion_url": ""
+        },
+        "nootka": {
+            "ion_url": ""
+        },
+        "dene": {
+            "ion_url": ""
+        },
+        "shuswap": {
+            "ion_url": ""
+        },
+        "ritsumeikan": {
+            "ion_url": ""
+        }
+    ]
+}
