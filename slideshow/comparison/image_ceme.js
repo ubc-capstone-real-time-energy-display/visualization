@@ -2,7 +2,7 @@
 var building= ["CIRS", "FNH", "CEME", "WOOD", "MCLD"];
 var data= [10,-20,0,4,-50];
 var elem = document.getElementById("demo2")
-var energy = 10;
+var energy = 0;
 
 var x = Math.abs(energy);
 var image = document.getElementById('bulb2');
