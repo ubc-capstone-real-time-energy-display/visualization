@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+</script>
+</head>
+
+<body style= "font-size: 27px; font-family: arial; position:fixed; left:260px; bottom:370px; color: #6E6E6E; background-color: #F3E2A9"; onload="startTime()"> 
+    <h1> Today
+    <div style= "position:fixed; left:250px; bottom:350px; color: #6E6E6E; font-size: 50px; font-family: arial"; id="txt"> </div>
+    </h1>
+    <h2 style= "font-family: Arial; font-size: 70px; color: black; position:fixed; right:557px; bottom:500px;">
+        Totem
+    </h2>
+    
+        <img src="https://raw.githubusercontent.com/ubc-capstone-real-time-energy-display/visualization/master/public_html/imgs/light-happy.png" style="position:fixed; right:550px; bottom:150px; width:240px; height:370px; id="bulb"/>
+
+        <h1 style="color: #6E6E6E; position:fixed; right:100px; bottom:400px; font-family: Arial; font-size: 50px;">using data% less</h1>
+        <h1 style="color: #6E6E6E; position:fixed; right:200px; bottom:350px; font-family: Arial; font-size: 50px;">electricity</h1>
+        <h1 style="color: #6E6E6E; position:fixed; right:145px; bottom:300px; font-family: Arial; font-size: 50px;">than last week</h1>
+   
+</body>
+</html>
