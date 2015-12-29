@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+	
+	<head>
+
+		<title>Supersized - Full Screen Background Slideshow jQuery Plugin</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		
+		<link rel="stylesheet" href="css/supersized.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="theme/supersized.shutter.css" type="text/css" media="screen" />
+		
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+		
+		<script type="text/javascript" src="js/supersized.3.2.7.min.js"></script>
+		<script type="text/javascript" src="theme/supersized.shutter.min.js"></script>
+		
+		<script type="text/javascript">
+			
+			jQuery(function($){
+				
+				$.supersized({
+				
+					// Functionality
+					slideshow               :   1,			// Slideshow on/off
+					autoplay				:	1,			// Slideshow starts playing automatically
+					start_slide             :   1,			// Start slide (0 is random)
+					stop_loop				:	0,			// Pauses slideshow on last slide
+					random					: 	0,			// Randomize slide order (Ignores start slide)
+					slide_interval          :   3000,		// Length between transitions
+					transition              :   6, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+					transition_speed		:	10,		// Speed of transition
+					new_window				:	1,			// Image links open in new window/tab
+					pause_hover             :   0,			// Pause slideshow on hover
+					keyboard_nav            :   1,			// Keyboard navigation on/off
+					performance				:	1,			// 0-Normal, 1-Hybrid speed/quality, 2-Optimizes image quality, 3-Optimizes transition speed // (Only works for Firefox/IE, not Webkit)
+					image_protect			:	1,			// Disables image dragging and right click with Javascript
+															   
+					// Size & Position						   
+					min_width		        :   0,			// Min width allowed (in pixels)
+					min_height		        :   0,			// Min height allowed (in pixels)
+					vertical_center         :   1,			// Vertically center background
+					horizontal_center       :   1,			// Horizontally center background
+					fit_always				:	0,			// Image will never exceed browser width or height (Ignores min. dimensions)
+					fit_portrait         	:   1,			// Portrait images will not exceed browser height
+					fit_landscape			:   0,			// Landscape images will not exceed browser width
+															   
+					// Components							
+					slide_links				:	'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
+					thumb_links				:	1,			// Individual thumb links for each slide
+					thumbnail_navigation    :   0,			// Thumbnail navigation
+					slides 					:  	[			// Slideshow Images
+														{image : 'https://lh3.googleusercontent.com/-qkOfj6JbZ_rWFs4LZOJNn2-N1PIvUywfiFtvU_XTGppYU4WKeUvgD8F--jcylohnLmMxtxscms3pZz9VfFAUFJ3djxW8y7AWJY2EjUGu9DP0YosRDWjg-X-iMpDi7UZmGrMHuvm8SSvpdVlIkVDC0vUFxPX5btBlHtEz0FljjiD4uogWckZ5agya4nI_h8gibRGupDKfte-l-yM5N22Xzt3Jua51vtCakAe2K6L9vPnJ8Z9XPLUTcV9Xvccw0tE0HJMqfK1RfhKs8tfciRLozgFhyVpIYJnjhZGkvLRxhsnBWkGe7Gscd0xng-cv0G6PAU8ncb3n54i8hDYh1Gxbnd5ofCWLoCR3S2nMf-rQ5LQu3Lh5phEilLj3G58bMgvP8VzT2OhIwrg3UKjVo9P_ciOGCQgAx9p-IR4WC1ufSoniTcQU_-CzjlauYSRYEY5OQVD03f0L1-zM-8EZ3fL3wtK2x0Oj0v1bQLuqMUNn9sQ4Q2L8K6Hya9qjgZTOFvwMVWMjlsSge9k2jaGnN5XozUeR1ozSPMjU-IWKlVPD-CeOX21GrqYw2UzooIbPo4EfRXM=w1812-h1016-no'},
+														{image : 'https://lh3.googleusercontent.com/hFNeK3IBSJEFrpDCCyonvDvtUY8VAnIK3uC2Er6IX-9SDG9ctRAG-RQ8IaCzhvgY6e_6UqZdOooloFWfQz3oiIS8YJs9nuvu0Aj0-xq24TMr2_PysrHJh8XyaON3BF8INqB108RJGNOknFtUaLvXWd1KDSfsXIfKrx7uAFNrBa1utvgyrqFgXpmuF1SI034fCXoku8gZWEMAzGZwgv5j12vduTGV8XtdeIV6YgKKGlP22dhK0rm1xeaGbbbsIzMA3gryei5tzSnqRWU_squJmJ9sqW0gHKEvYUlyAeIOfDqYmrWOuQWo0baF-AD-AstveI_Fqxgf0OQnEh3OWjlrzJLb7tVQY-t40gwqEUlbLElikfUsPvYEQLBUrcJjmRSDeZAZltTgULAsGKJADjnGqXdUb7Fm2XzlZv8Cet-cYEmZBhnzERrpi6p6wNsJRng2rkSoUYlsv_tP-alisHZj2pctPZm7a19cRg0XtxbG89xvSB0zRfsPkNWeubygZGa28_A906IFVPNy8WgiWsdMv_mOGUoib3GdY-ac8S2dMZgOBwhtssyxRkctaVBcnAUyWIKi=w1810-h1016-no'},  
+														{image : 'https://lh3.googleusercontent.com/iXCKaOcpQM493zqv-UuyzKypzTWBQtZg4rrFisVqy-SjZXY9gHCovm8dRTtHYvjhD60ghqaqJF8JlMUSaVwaaUpjGhjdjWYUo9vfABGOICYsXMkNnbwJiAmSPJXYJXwXsvfRgPjZgxc69XUyaPI8wBmUNJ2_w4cY0Dufs2djhLJWOlM_uTmfhZb8n5ef-ug6Cjpmjx3h1H0e-lD9kqHnTvlwGnLxGdUjlTZ8JAz-VLjUXIXEcuTzu2LjtRedHEv95CeRCSqrV3vspciITFMAD1oe9CMOvQ0kNLhyoKSyx3Kf_1babmhD9scDOP7nhgBF9YwYqEjLVbNt3TpMRKyBoOakloK4oRMeqEIClH7jk__cgLg68jnKBtTppa-ZtSPWpLiACntsk-305CQPrFKhX_h1Rc9ardjcpuYL5PkJS73_kp1KMJRDhBjKiz7c46TjSfxk6tU9RVmGgeXU8X0Tc-33UZiCgEF9fzLMYVGB1RIkkFn5HmTgMyi6pcZbCrUzr7DIkyCjjNKz3BP3d1yu5Fus30iiqfspWbJUmZ8S_YqZ2VKRaBB4K-6keyBmsWvm4VKC=w1810-h1014-no'},
+														{image : 'https://lh3.googleusercontent.com/GMbn2EhiuaS-AFAAapiAHXN-RpA3dNDevySkgBLLBY1nSeHKc5OdWTd1Xa_OgRajurzmT-EUaqEp4yWiZfS8cJk-4e6DhxO884KOOdENwE7ss86Xg24ICEhclbSR9Wv3iAGvPDABpaai0lWoMRnDgVzPqFY8daOAcdrqFdxkK1brywvUp42dQ-_nx_usshRnnbfVNvmARsAV7tkHw89x7xpCB2DGwYDPjpHohijJw3mNTPns6vhjRhbOw1QwPrbYHGmBTtn9iexv0BimO1LnXKAeuk9sMIpLbAoxSY0sfvr_uKW3B1UQ7i0Pm1Ibf3YBDUjp9dvm0koktPKAqAhNay1Wqezq23-AaXga0PcohKalO2F1SddzKda5GUGVlwwwVYjE10MwmVgGvPZWuDPqyptsxSQpuxLUlhMbs6JYqGNQ5FqDcWtNp9-q8i1sV0qsgtwJcY6ponAFYgOJYGlzHHCXg_lXWt2oLzuIvvIZYDwtvDEkWiCvjOIoF27-RF21mIMmutGVNKAWMiwOYn8W0sCLkhHK2B6lxnSUQ606qLe6Uva9PgjzoznDfH5B0K6SWbun=w1802-h1014-no'},
+														{image : 'https://lh3.googleusercontent.com/Xt3o9_n1bm-vsHVZNznGGL6kPVjrv7QyU_-PU4rBTbEifve6_K353KJbYoxykuxhgYn58mD5BInmJczNdQ5tVbE5RlMveGmTh1qQ0QRo5HTSGl99mWVBY5EvAcSaSqDas7YpQewgSTE2FWaUzlSrlHoBwCkHCvOlCu120-W2Z5Gwyq0nTU-Lee9r00maQURtD6gLCPRfjIlUWqaLrcJjt1jG9-KMeHZ_47W0vbCtBamypOXHV5Rf43v3UgRhHiOkWNyJrlvRf6YfZdrnK6nHwm2HMJ88fhJP0PN2tAOLrg0UG7XxAJZQnJGsVsf2lszh-4O1OUsdndlcNTqnmNx8y4ZWaplZG5c0wxgEHKAuU9qo4KmLA9ee9G4BlcuOWOT6Oq4m01JdCbQDZMannqbTJqefwWvXeUvavjt0HD1tMB1kmWFGAXz4zAvFtWmNunmbntil0yZkHGmR4HH4gLl0Ecaq0GDi8z2nnV4-Cva2f7ghf2fH-VPE0YGufwXtoBsPD0sdTbL9r_-VVg8OhrXCDSabKlrGamRqJntcrzTEXXdGAx4eH1i0j4uSrdSaPMLfqpsd=w1800-h1014-no'},
+														{image : 'https://lh3.googleusercontent.com/RInnLRVKyez63YBEcetrSPt5gKzvwBa8U3QWqYO2wV3ua_5mWFG5InGoPMaCeF9beXnIoSmlZKDhqo4Ys9yeXSpgFPARpoLQOHZPItPAN1fks8DCs5kcHhq_QmF67fActlSSWOUUNJNZZWvIeW5VxV1p_ZHl6qLo2UGM-tg_IcH8SbnowARG3OptIGfJ7XBmRuwMLtkSomOSCqEUAld4-9AI5pL2CkDsbrDX0jU-WD1ioDg_j7bJp4SpaeCGXoS_wKCkMcwEb5gy-QoV0FZeszc4R6YWcvt1r5Wnqzozrwv_HaCnrrkMXMlw8fdT-iWIPC5VifdahTADaby1PTNwJ3SAQ0smCpZhk2jg9NV3yLmVnHBveRMYqwmwE7lZuFHl1LwWlsv7C1rHMnYj1d2PQdCrqoSTSSBBilUlHWRDHKxwrBBFywf-wkGqvWy78WGB5nrv5tf_YWFmlV5ZrMAG72ss16LYqJUlTmr79SyO7lk4CKso2Him_aD09JZevKUfRYUQgIQy9kgpVHoAflwt2-wPZayUKcld1-auv0vdDEah7hHOM2UETBt2d5F2Gh4dkkhs=w1804-h1016-no'},
+														{image : 'https://lh3.googleusercontent.com/FBE388BO0uJpGElDuMmtxuxuG9ylYQBRAvTY0lBgwSudMU5YLVHQNkEsQxhqjS49JRizVC2hruOrYGpUmgCqqxXxdJX9IOlHz0_ih4znE3rf9MGU_Gie0LhrzWyKBcVqUzhpO1KzDUJQTSWx5ehNLbpPVYZoR-DpuHWmcl-nnHGZkaVD3EiaLyO6FL9Wyo9vlQb49fCAqLCr5jNL9F0hcjJE5JL4vdpMzsDLqspNnX2Z_4qpM4xcTBKN5Q_uQ-4t9dMC_qWpxnQHHAm3wDrTEfgav1Sw_Ij2j4UZh1-e80GVYyqtasREZZ7c1IvijXozs6iQJDl2qZYkDpOqGE3hvpQIXekPMzPtKW8TjfBOgmjkax59_cCCMPAiJOFgunrtDGF1nsG9qHd5nol-TrleCEkbT7UgPTz-hPvalJoCmyly3D95D_hBPjGcuNJaqK-BuY4V5oE3TtPAGd8GLyALrol9GcRTaV8OyqtqQ22FmIC1s97aQyYNJE62HDjpzSRt4tkbPy26w8qAZ77FAk5L-0y275R_ElHNO_5WDcV3yMS39QR0-0vSuWw3wnrAMVT-r713=w1810-h1016-no'},
+														{image : 'https://lh3.googleusercontent.com/uc1bjO5SrD-zcasa3MvdAIRtcQky0otpvMDT36MBRCS-JddqmWlTcx8AWHc17qmk0obCe1D6XRuGwMp7z-p3qRCTZ30v_y2ouoJdTawhOdAHKbb4L_jNdv2PNyGM81IVGPb5A-62M1yT3wNb7E642PGoblWd4UjYEpy7fO-OfYQJHNBYbUvFJ10CGh7RGmfdJI_g-IMqOWYOFjNG58D_6IGwk-RI7KxSjhBq8r2S7qBOQC52eoYRYKdggp_2jU_l-C7MJC1ZaQU77M6lvP7HFNLQf5ZMno_i8jTAUCdSzv-xN_Vyg4Q5y_fpG0upSDLQ76yfFzsIikfNcUjT8V6BQFFz_epvapOACHl8whJjuow6G2SS0lCPkshdVui-I9XyLEpjkGtUmCf6Vgkm7aMgloRMglT9K9klFBAKaWt_r1FxEoN6LVDFyyrgS34e8zTtZntPbPrVyirBYI95RLAULRPfw7bYqEPAzIPP3AkZg0MUPYseIJKsNRQoVGOGy7z_p6Th2Vd2o6xmZo0FeXapF5hsV8IJEV6TtWbXmklS7XskI-Iufc7qz-sm2IN8bmqnhaaT=w1814-h1014-no'}
+												],
+												
+					// Theme Options			   
+					progress_bar			:	1,			// Timer for each slide							
+					mouse_scrub				:	0
+					
+				});
+		    });
+		    
+		</script>
+		
+	</head>
+	
+<body>
+
+	<div id="prevthumb"></div>
+	<div id="nextthumb"></div>
+	
+
+		</div>
+	</div>  
+
+
+</body>
+</html>
