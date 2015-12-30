@@ -12,19 +12,19 @@ for (i = 0; i < data.building.length; i++) {
   if (data.energy[i] < 0) {
     compvalue = Math.abs(data.energy[i]) + "% less";
     src = data.happyNRGsrc;
-    color = "green";
+    color = "#70bc29"; //gren color
   } else if (data.energy[i] === 0) {
     compvalue = Math.abs(data.energy[i]) + "% less";
     src = data.contentNRGsrc;
-    color = "green";
+    color = "#70bc29"; //green color
   } else {
     compvalue = Math.abs(data.energy[i]) + "% more";
     src = data.vsadNRGsrc;
-    color = "red";
+    color = "#ee5737"; //red color
   }
 
   buffer += "<div class=\"column\" style=\"order=" + (i + 1) + "\">";
-  buffer += "<h3 style=\"color: #6E6E6E\">" + data.building[i] + "</h3>";
+  buffer += "<h3 style=\"color: #5f5b50\">" + data.building[i] + "</h3>";
   buffer += "<img style=\"width:200px; height:300px;\" src=\"" + src + "\" />";
   buffer += "<h3 style=\"color: " + color + "\">" + compvalue + "</h3>";
   buffer += "</div>";
