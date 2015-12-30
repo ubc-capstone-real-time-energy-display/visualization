@@ -58,7 +58,7 @@
       </h2>
     </div>
     <div style="float:left; text-align: center; margin: 20px;">
-      <img src= "public_html/imgs/light-very-sad.png" id="bulb"; style="width:240px; height:370px;">
+      <img src= "../../imgs/light-very-sad.png" id="bulb"; style="width:240px; height:370px;">
       
     </div>
     <div style="float:left; text-align: left; margin: 75px 10px; padding-left: 20px; font-size: 50px;">
@@ -78,11 +78,11 @@ var x = Math.abs(energy);
 var image = document.getElementById('bulb');
 if (energy<0){
   document.getElementById("demo").innerHTML = x + "% less";
-  image.src= "https://raw.githubusercontent.com/ubc-capstone-real-time-energy-display/visualization/master/public_html/imgs/light-happy.png";
+  image.src= "../../imgs/light-happy.png";
 }
 else if (energy==0){
   document.getElementById("demo").innerHTML = energy + "% less";
-  image.src= "https://raw.githubusercontent.com/ubc-capstone-real-time-energy-display/visualization/master/public_html/imgs/light-content.png";
+  image.src= "../../imgs/light-content.png";
 }
 
 else 

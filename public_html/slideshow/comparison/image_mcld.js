@@ -9,19 +9,19 @@ var image = document.getElementById('bulb4');
 if (energy<0){
 	document.getElementById("name4").innerHTML = building[4];
   document.getElementById("demo4").innerHTML = x + "% less";
-  image.src= "https://raw.githubusercontent.com/ubc-capstone-real-time-energy-display/visualization/master/public_html/imgs/light-happy.png";
+  image.src= "../../imgs/light-happy.png";
 }
 else if (energy==0){
 	document.getElementById("name4").innerHTML = building[4];
   document.getElementById("demo4").innerHTML = energy + "% less";
-  image.src= "https://raw.githubusercontent.com/ubc-capstone-real-time-energy-display/visualization/master/public_html/imgs/light-content.png";
+  image.src= "../../imgs/light-content.png";
 }
 
 else {
 	document.getElementById("name4").innerHTML = building[4];
 document.getElementById("demo4").innerHTML = energy + "% more";
 elem.style.color = "Red";
-image.src= "https://raw.githubusercontent.com/ubc-capstone-real-time-energy-display/visualization/master/public_html/imgs/light-very-sad.png";
+image.src= "../../imgs/light-very-sad.png";
 }
 
 
