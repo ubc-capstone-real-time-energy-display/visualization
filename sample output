@@ -1,0 +1,29 @@
+{
+	"building": {
+		"building_name": "Dene",
+		"energy_usage": -8,
+		"time": "10:30 am"
+	},
+	"neighbours": [{
+		"name": "Kwak",
+		"energy_usage": -4
+	},
+	{
+		"name": "CIRS",
+		"engery_usage": 23
+	}],
+	"tips": [{
+		"imageURL": "/public_html/imgs/light-happy.png",
+		"title": "Turn me off",
+		"subtitle": "Let your devices rest at night, like you",
+		"color_title": "#000000",
+		"color_subtitle": "#000000"
+	},
+	{
+		"imageURL": "/public_html/imgs/kettle.png",
+		"title": "Turn me off",
+		"subtitle": "Let your devices rest at night, like you",
+		"color_title": "#000000",
+		"color_subtitle": "#000000"
+	}]
+}
